@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,89 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-<body>
-        <div id="animal-btn"></div>
-        <form id="animal-form">
-            <label for = "animalInput">Add Animal</label>
-            <input type="text" id="animalInput"> 
-            <input type="submit" value="Submit" id="addAnimal">
 
-        </form>
-        <div id="animals"></div>
+<body>
+    <h1 class="name">Pet Giphy</h1>
+    <!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 justify-content:center">
+                <div id="animal-btn"></div>
+            </div>
+        </div>
+    </div> -->
+    <div id="animal-btn"></div>
+    <br>
+    <div class="name1">
+        <label for="animalInput">Add Animal</label>
+        <input type="text" id="animalInput">
+        <input type="submit" value="Submit" id="addAnimal">
+    </div>
+    </form>
+    <div id="animals"></div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div id="gifarea" class="col-xs-12.col-sm-12.col-md-12.col-lg-12"></div>
+        </div>
+    </div>
+
     <script src="./java.js"></script>
+
+    <style>
+        .name1 {
+            text-align: center;
+        }
+
+        #animal-btn,
+        .gifBtn {
+            margin: 5px;
+            padding: 20px;
+            font-family: cursive;
+        }
+
+        .gifBtn {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .name {
+            text-align: center;
+            font-family: cursive;
+            color: brown;
+            margin-top: 30px;
+            font-size: 50px;
+
+        }
+
+        body {
+            background-image: url(https://dikkatkopekvar.org/wp-content/uploads/2017/11/bg-paw-print.png);
+        }
+
+        .jumbotron {
+            height: 200px;
+            border: 3px solid red;
+        }
+
+        #addAnimal,
+        label {
+            margin: 5px;
+            padding: 20px;
+            font-family: cursive;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        label {
+            margin-left: 33px;
+        }
+
+        #animalInput {
+            margin: 5px;
+            padding: 15px;
+            font-family: cursive;
+        }
+    </style>
+
 </body>
+
 </html>
